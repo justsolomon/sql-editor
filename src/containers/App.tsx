@@ -1,7 +1,13 @@
-import { Provider } from 'react-redux';
-import store from 'redux/store';
+import Editor from './Editor';
+import Layout from 'components/global/Layout';
 import 'styles/main.scss';
 
-const App = () => <Provider store={store}>App</Provider>;
+const App = () => {
+  return (
+    <Layout>
+      <Editor />
+    </Layout>
+  );
+};
 
 export default App;
