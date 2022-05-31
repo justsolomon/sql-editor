@@ -24,6 +24,7 @@ const Query = ({
         <Button
           variant="icon"
           colorScheme="red"
+          aria-label="Delete query"
           onClick={() => deleteQuery(index)}
         >
           <DeleteIcon />
