@@ -8,7 +8,7 @@
   background-color: $light-gray;
 
   &__textarea {
-    width: 75%;
+    width: 80%;
   }
 
   &__note {
@@ -22,11 +22,21 @@
   }
 
   &__action-buttons {
-    width: 20%;
+    width: 15%;
 
     button {
       width: 100%;
       margin-bottom: 16px;
+    }
+  }
+
+  @media #{$media-desktop} {
+    &__textarea {
+      width: 75%;
+    }
+
+    &__action-buttons {
+      width: 20%;
     }
   }
 
