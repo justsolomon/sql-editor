@@ -1,16 +1,14 @@
-import { lazy, Suspense, useState } from 'react';
+import { useState } from 'react';
 import { QueryType } from 'types/editor';
 import { Order } from 'types/table';
 import toast from 'react-hot-toast';
-import Spinner from 'components/global/Spinner';
 import EditorWrapper from 'components/editor/EditorWrapper';
 import QueriesSection from 'components/editor/QueriesSection';
 import firstQueryData from 'utils/data/first-query.json';
 import secondQueryData from 'utils/data/second-query.json';
 import thirdQueryData from 'utils/data/third-query.json';
-
-const CodeEditor = lazy(() => import('components/editor/CodeEditor'));
-const OutputTable = lazy(() => import('components/editor/OutputTable'));
+import CodeEditor from 'components/editor/CodeEditor';
+import OutputTable from 'components/editor/OutputTable';
 
 const Editor = () => {
   const [query, setQuery] = useState<string>('SELECT * FROM orders;');
@@ -87,16 +85,14 @@ const Editor = () => {
       />
 
       <div>
-        <Suspense fallback={<Spinner />}>
-          <CodeEditor
-            query={query}
-            setQuery={setQuery}
-            runQuery={runQuery}
-            saveQuery={saveQuery}
-          />
+        <CodeEditor
+          query={query}
+          setQuery={setQuery}
+          runQuery={runQuery}
+          saveQuery={saveQuery}
+        />
 
-          <OutputTable outputData={outputData} />
-        </Suspense>
+        <OutputTable outputData={outputData} />
       </div>
     </EditorWrapper>
   );

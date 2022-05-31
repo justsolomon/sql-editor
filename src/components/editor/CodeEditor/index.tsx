@@ -4,6 +4,14 @@ import { ReactComponent as PlayIcon } from 'assets/play.svg';
 import { ReactComponent as SaveIcon } from 'assets/save.svg';
 import { ReactComponent as ClearIcon } from 'assets/clear.svg';
 import styles from './codeEditor.module.scss';
+import 'codemirror/addon/display/autorefresh';
+import 'codemirror/keymap/sublime';
+import 'codemirror/theme/neo.css';
+import 'codemirror/lib/codemirror.css';
+import 'codemirror/theme/material-palenight.css';
+import 'codemirror/mode/sql/sql';
+import 'codemirror/keymap/sublime';
+import 'codemirror/addon/hint/sql-hint.js';
 
 interface CodeEditorProps {
   query: string;
