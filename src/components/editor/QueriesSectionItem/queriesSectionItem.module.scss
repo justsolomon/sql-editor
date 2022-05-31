@@ -1,0 +1,59 @@
+@import 'styles/mixins';
+
+.section-item {
+  height: 48%;
+
+  &:first-child {
+    margin-bottom: 4%;
+  }
+
+  &__header {
+    @include flex(row, center);
+
+    margin-bottom: 12px;
+    font-size: $font-size--md;
+    font-weight: $font-weight--bold;
+
+    svg {
+      @include size(20px);
+
+      margin-right: 8px;
+      color: $blue;
+    }
+  }
+
+  &__search-query {
+    @include position();
+
+    svg {
+      @include position(absolute, 8px, unset, 8px, 8px);
+      @include size(16px);
+
+      color: $dark-gray;
+    }
+
+    input {
+      height: 32px;
+      width: 100%;
+      padding: 0 16px 0 32px;
+      border: none;
+      border-radius: $border-radius--sm;
+      font-size: $font-size--base;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__query-list {
+    height: calc(100% - 80px);
+    margin-top: 10px;
+    overflow-y: auto;
+
+    li {
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import 'styles/mixins';
+
+.query {
+  @include flex(row, center, space-between);
+
+  padding: 10px 8px;
+  border-radius: $border-radius--sm;
+  background-color: $white;
+  font-size: $font-size--xs;
+  line-height: $font-size--base;
+  color: $blue;
+
+  button {
+    @include size(fit-content);
+
+    padding: 4px;
+
+    svg {
+      @include size(14px);
+    }
+  }
+}

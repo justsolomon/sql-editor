@@ -1,0 +1,25 @@
+@import 'styles/mixins';
+
+.header {
+  @include flex(row, center);
+  @include position(sticky, 0);
+
+  height: 7vh;
+  padding-left: 24px;
+  border-bottom: 1px solid $light-gray;
+  background-color: $white;
+  z-index: 1;
+
+  h1 {
+    font-size: $font-size--xl;
+    font-weight: $font-weight--bold;
+  }
+
+  @media #{$media-tablet} {
+    @include position();
+  }
+
+  @media #{$media-mobile--sm} {
+    padding-left: 16px;
+  }
+}

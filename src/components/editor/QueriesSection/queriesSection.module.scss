@@ -1,0 +1,13 @@
+@import 'styles/mixins';
+
+.queries-section {
+  height: 87vh;
+  padding: 16px;
+  border-radius: $border-radius--md;
+  background-color: $light-gray;
+
+  @media #{$media-tablet} {
+    height: 70vh;
+    margin-bottom: 24px;
+  }
+}

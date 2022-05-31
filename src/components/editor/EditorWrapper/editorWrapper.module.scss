@@ -1,0 +1,35 @@
+@import 'styles/mixins';
+
+.editor-wrapper {
+  @include flex(row, flex-start, space-between);
+  @include position();
+
+  margin-top: 16px;
+
+  > div {
+    &:first-child {
+      @include position(sticky, calc(7vh + 16px));
+
+      width: 30%;
+    }
+
+    &:last-child {
+      width: 68%;
+    }
+  }
+
+  @media #{$media-tablet} {
+    flex-direction: column;
+
+    > div {
+      &:first-child,
+      &:last-child {
+        width: 100%;
+      }
+
+      &:first-child {
+        @include position();
+      }
+    }
+  }
+}

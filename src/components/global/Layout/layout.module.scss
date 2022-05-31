@@ -1,0 +1,13 @@
+@import 'styles/mixins';
+
+.main-content {
+  padding: 0 24px 32px 24px;
+
+  @media #{$media-tablet} {
+    padding-bottom: 32px;
+  }
+
+  @media #{$media-mobile--sm} {
+    padding: 0 16px 32px 16px;
+  }
+}

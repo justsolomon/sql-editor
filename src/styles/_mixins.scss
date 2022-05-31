@@ -1,1 +1,33 @@
 @import 'styles/variables';
+
+@mixin flex(
+  $direction: row,
+  $align: flex-start,
+  $justify: flex-start,
+  $wrap: unset
+) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+}
+
+@mixin size($size) {
+  height: $size;
+  width: $size;
+}
+
+@mixin position(
+  $position: relative,
+  $top: unset,
+  $right: unset,
+  $bottom: unset,
+  $left: unset
+) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}

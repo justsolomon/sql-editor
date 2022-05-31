@@ -1,0 +1,110 @@
+@import 'styles/mixins';
+
+.output-data {
+  margin-top: 24px;
+
+  &__heading {
+    margin-bottom: 12px;
+    font-size: $font-size--lg;
+    font-weight: $font-weight--bold;
+  }
+
+  &__content {
+    padding: 12px;
+    border-radius: $border-radius--md;
+    background-color: $light-gray;
+  }
+
+  &__sub-heading {
+    @include flex(row, center, space-between);
+
+    margin-bottom: 8px;
+
+    h3 {
+      font-size: $font-size--sm;
+      font-style: italic;
+
+      span {
+        font-weight: $font-weight--medium;
+      }
+    }
+
+    button {
+      height: 32px;
+      font-size: $font-size--sm;
+
+      svg {
+        @include size(13px);
+      }
+    }
+  }
+
+  &__table {
+    @include position();
+
+    width: 100%;
+    border-bottom: 1px solid $gray;
+    border-collapse: collapse;
+
+    &-container {
+      height: calc(87vh - 94px);
+      overflow: auto;
+    }
+
+    thead {
+      @include position(sticky, 0);
+
+      background-color: $gray;
+    }
+
+    tr > td,
+    th {
+      &:first-child {
+        border-left: 1px solid $gray;
+      }
+
+      &:last-child {
+        border-right: 1px solid $gray;
+      }
+    }
+
+    tr {
+      background-color: $white;
+    }
+
+    tr:nth-child(even) {
+      background-color: $light-gray;
+    }
+
+    td,
+    th {
+      padding: 8px;
+      font-size: $font-size--sm;
+      text-align: left;
+    }
+
+    th {
+      font-weight: $font-weight--bold;
+    }
+  }
+}
+
+.no-output {
+  @include flex(column, center, center);
+
+  margin-top: 32px;
+  padding-bottom: 24px;
+  color: $dark-gray;
+  font-weight: $font-weight--bold;
+  text-align: center;
+
+  svg {
+    @include size(28px);
+  }
+
+  p {
+    margin-top: 12px;
+    font-size: $font-size--xl;
+    line-height: 130%;
+  }
+}

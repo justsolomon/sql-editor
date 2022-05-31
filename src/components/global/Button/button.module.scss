@@ -1,15 +1,100 @@
-@import 'styles/variables';
 @import 'styles/mixins';
 
 .button {
-  @include flex-center();
+  @include flex(row, center, center);
 
   height: 40px;
   padding: 0 16px;
-  border: none;
-  cursor: pointer;
-  color: #fff;
-  font-size: $font-size--md;
+  font-size: $font-size--base;
   font-weight: $font-weight--bold;
   border-radius: $border-radius--sm;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &--solid {
+    color: $white;
+    background-color: $blue;
+    border: none;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $blue--hover;
+    }
+
+    &:active {
+      background-color: $blue--focus;
+    }
+  }
+
+  &--red {
+    color: $white;
+    background-color: $red;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $red--hover;
+    }
+
+    &:active {
+      background-color: $red--focus;
+    }
+  }
+
+  &--outline,
+  &--icon {
+    color: $blue;
+    border: 1px solid $blue;
+    background-color: transparent;
+
+    &:hover,
+    &:focus-visible {
+      color: $white;
+      background-color: $blue;
+    }
+
+    &:active {
+      background-color: $blue--hover;
+    }
+  }
+
+  &--outline.button--red,
+  &--icon.button--red {
+    color: $red;
+    border-color: $red;
+
+    &:hover,
+    &:focus-visible {
+      color: $white;
+      background-color: $red;
+    }
+
+    &:active {
+      background-color: $red--hover;
+    }
+  }
+
+  &--icon {
+    padding: 0 10px;
+    border: none;
+
+    svg {
+      @include size(18px);
+
+      margin: 0;
+    }
+  }
+
+  &__left-icon {
+    @include flex();
+    @include size(fit-content);
+
+    svg {
+      @include size(16px);
+
+      margin-right: 6px;
+    }
+  }
 }

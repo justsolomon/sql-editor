@@ -4,8 +4,8 @@ $font-family: 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
 $font-weight--normal: 400;
 $font-weight--medium: 600;
 $font-weight--bold: 700;
-$font-size--xs: 12px;
-$font-size--sm: 14px;
+$font-size--xs: 14px;
+$font-size--sm: 15px;
 $font-size--base: 16px;
 $font-size--md: 18px;
 $font-size--lg: 20px;
@@ -14,6 +14,9 @@ $font-size--xl: 24px;
 /* Color Variables */
 $white: #ffffff;
 $black: #1a202c;
+$gray: #eeeeee;
+$light-gray: #f7f7f7;
+$dark-gray: #a0a0a0;
 $red: #e53e3e;
 $blue: #3182ce;
 $red--hover: #c53030;
@@ -28,7 +31,7 @@ $border-radius--lg: 8px;
 
 /* Media query variables */
 $media-desktop: 'only screen and (max-width : 1200px)';
-$media-desktop-sm: 'only screen and (max-width : 1024px)';
+$media-desktop--sm: 'only screen and (max-width : 1024px)';
 $media-tablet: 'only screen and (max-width : 768px)';
 $media-mobile: 'only screen and (max-width : 600px)';
-$media-mobile-sm: 'only screen and (max-width : 480px)';
+$media-mobile--sm: 'only screen and (max-width : 480px)';
