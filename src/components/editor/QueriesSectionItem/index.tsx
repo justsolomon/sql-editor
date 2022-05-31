@@ -48,6 +48,8 @@ const QueriesSectionItem = ({
       </div>
 
       <ul className={styles['section-item__query-list']}>
+        {!displayedQueries.length ? <p>No queries available</p> : null}
+
         {displayedQueries.map((query, index) => (
           <li key={index}>
             <Query value={query} index={index} {...rest} />
