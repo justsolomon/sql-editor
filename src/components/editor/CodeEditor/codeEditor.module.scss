@@ -56,5 +56,16 @@
         }
       }
     }
+
+    @media #{$media-mobile--xs} {
+      &__action-buttons {
+        flex-direction: column;
+
+        button {
+          width: 100%;
+          margin-bottom: 8px;
+        }
+      }
+    }
   }
 }

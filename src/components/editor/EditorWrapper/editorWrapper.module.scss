@@ -10,11 +10,35 @@
     &:first-child {
       @include position(sticky, calc(7vh + 16px));
 
-      width: 30%;
+      width: 23%;
     }
 
     &:last-child {
-      width: 68%;
+      width: 75%;
+    }
+  }
+
+  @media #{$media-desktop} {
+    > div {
+      &:first-child {
+        width: 28%;
+      }
+
+      &:last-child {
+        width: 70%;
+      }
+    }
+  }
+
+  @media #{$media-desktop--sm} {
+    > div {
+      &:first-child {
+        width: 30%;
+      }
+
+      &:last-child {
+        width: 68%;
+      }
     }
   }
 
