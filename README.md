@@ -28,7 +28,7 @@ I used Google Lighthouse and PageSpeed Insights to analyze the page load time an
 
 ### Page Load Time
 
-I took the page load time as the Time to Interactive(TTI) of the application. On a mobile device, the page load time is **1.3 seconds**. On desktop, the time is **0.4 seconds**. 
+I took the page load time as the Time to Interactive(TTI) of the application. On a mobile device, the page load time is **1.3 seconds**. On desktop, the time is **0.4 seconds**.
 
 I have also attached a few screenshots below showing a more detailed report of the page load time. The reports were generated using Google Lighthouse in incognito mode in Google Chrome v101.0.4951.64.
 
@@ -38,7 +38,7 @@ To decrease the page load time of the application, I did the following:
 
 - Used reusable components to prevent repetition in the codebase.
 
-- Used custom SASS instead of CSS and UI libraries like Bootstrap, Material UI, etc to prevent unnecessary overhead.
+- Used custom SASS instead of CSS frameworks and UI libraries like Bootstrap, Material UI, etc to prevent unnecessary overhead.
 
 - Used minimal dependencies in the application, e.g I added icons manually as svg assets instead of using an icon library like FontAwesome, since only a few icons were used in the application.
 
@@ -55,5 +55,3 @@ To decrease the page load time of the application, I did the following:
 ### Load Time (Desktop)
 
 <img width="1439" alt="Screenshot 2022-06-01 at 8 23 16 AM" src="https://user-images.githubusercontent.com/55158465/171350447-59596db6-453e-4055-b22c-e7f1d9178896.png">
-
-
