@@ -38,13 +38,13 @@ To decrease the page load time of the application, I did the following:
 
 - Used reusable components to prevent repetition in the codebase.
 
-- Avoided the use of CSS and UI libraries like Bootstrap, Material UI, etc and used custom SASS to prevent unnecessary overhead.
+- Used custom SASS instead of CSS and UI libraries like Bootstrap, Material UI, etc to prevent unnecessary overhead.
 
 - Used minimal dependencies in the application, e.g I added icons manually as svg assets instead of using an icon library like FontAwesome, since only a few icons were used in the application.
 
 - Used [React's Code-Splitting](https://reactjs.org/docs/code-splitting.html) to lazily import components, thereby splitting the Webpack bundles generated at build time into smaller sizes and preventing render-blocking.
 
-- Converted the application into a [Progressive Web App(PWA)](https://web.dev/progressive-web-apps/), to reduce subsequent page load times and allow the app to be used offline as it can be installed.
+- Converted the application into a [Progressive Web App (PWA)](https://web.dev/progressive-web-apps/), to reduce subsequent page load times and allow the app to be used offline as it can be installed.
 
 ## Screenshots
 
