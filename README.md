@@ -28,7 +28,7 @@ I used Google Lighthouse and PageSpeed Insights to analyze the page load time an
 
 ### Page Load Time
 
-I took the page load time as the Time to Interactive(TTI) of the application. On a mobile device, the page load time is **1.4 seconds**. On desktop, the time is **0.4 seconds**. 
+I took the page load time as the Time to Interactive(TTI) of the application. On a mobile device, the page load time is **1.3 seconds**. On desktop, the time is **0.4 seconds**. 
 
 I have also attached a few screenshots below showing a more detailed report of the page load time. The reports were generated using Google Lighthouse in incognito mode in Google Chrome v101.0.4951.64.
 
@@ -50,9 +50,10 @@ To decrease the page load time of the application, I did the following:
 
 ### Load Time (Mobile)
 
-<img width="1440" alt="Screenshot 2022-06-01 at 12 06 45 AM" src="https://user-images.githubusercontent.com/55158465/171342833-f2aca053-6619-4b76-844a-e26586105a81.png">
+<img width="1440" alt="Screenshot 2022-06-01 at 8 21 00 AM" src="https://user-images.githubusercontent.com/55158465/171350505-c23880d0-b907-4c77-a3de-a4d88e661f20.png">
 
 ### Load Time (Desktop)
 
-<img width="1437" alt="Screenshot 2022-06-01 at 12 12 45 AM" src="https://user-images.githubusercontent.com/55158465/171342807-10edcca1-b8d3-4569-93ce-ff9484ea8a65.png">
+<img width="1439" alt="Screenshot 2022-06-01 at 8 23 16 AM" src="https://user-images.githubusercontent.com/55158465/171350447-59596db6-453e-4055-b22c-e7f1d9178896.png">
+
 
