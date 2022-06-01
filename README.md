@@ -28,7 +28,9 @@ I used Google Lighthouse and PageSpeed Insights to analyze the page load time an
 
 ### Page Load Time
 
-I took the page load time as the Time to Interactive(TTI) of the application. On a mobile view, the page load time is **1.4 seconds**. On desktop view, the time is **0.4 seconds**.
+I took the page load time as the Time to Interactive(TTI) of the application. On a mobile device, the page load time is **1.4 seconds**. On desktop, the time is **0.4 seconds**. 
+
+I have also attached a few screenshots below showing a more detailed report of the page load time. The reports were generated using Google Lighthouse in incognito mode in Google Chrome v101.0.4951.64.
 
 ### Optimizing the Page Load Time
 
