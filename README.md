@@ -45,3 +45,12 @@ To decrease the page load time of the application, I did the following:
 - Converted the application into a [Progressive Web App(PWA)](https://web.dev/progressive-web-apps/), to reduce subsequent page load times and allow the app to be used offline as it can be installed.
 
 ## Screenshots
+
+### Load Time (Mobile)
+
+<img width="1440" alt="Screenshot 2022-06-01 at 12 06 45 AM" src="https://user-images.githubusercontent.com/55158465/171342833-f2aca053-6619-4b76-844a-e26586105a81.png">
+
+### Load Time (Desktop)
+
+<img width="1437" alt="Screenshot 2022-06-01 at 12 12 45 AM" src="https://user-images.githubusercontent.com/55158465/171342807-10edcca1-b8d3-4569-93ce-ff9484ea8a65.png">
+
